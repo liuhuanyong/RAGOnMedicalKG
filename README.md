@@ -10,7 +10,7 @@ self-implement of disease centered Medical graph from zero to full and sever as 
 
 实际上，我们在之前的项目 (https://github.com/liuhuanyong/QABasedOnMedicalKnowledgeGraph) 中已经开源过基于朴素KG实现方式的问答，其中涉及到知识图谱构建部分，用到的代码、用到的数据，可以从该项目中继承。
 
-e# 二、项目运行方式
+# 二、项目运行方式
 
 1、配置要求：要求配置neo4j数据库及相应的python依赖包。neo4j数据库用户名密码记住，并修改相应文件。    
 2、知识图谱数据导入：python build_medicalgraph.py，导入的数据较多，估计需要几个小时。     
