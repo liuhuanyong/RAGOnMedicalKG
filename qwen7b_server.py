@@ -10,10 +10,13 @@ from flask import Flask, request, jsonify
 from torch.nn import CrossEntropyLoss
 from tqdm import tqdm
 
-tokenizer = AutoTokenizer.from_pretrained("Qwen-7B", trust_remote_code=True)
-model = AutoModelForCausalLM.from_pretrained("Qwen-7B", trust_remote_code=True).cuda()
+
+## 注意，Qwen-7B-Chat需要自己下载，可以从huggingface或者modelscope下载，存放至当前目录
+
+tokenizer = AutoTokenizer.from_pretrained("Qwen-7B-Chat", trust_remote_code=True)
+model = AutoModelForCausalLM.from_pretrained("Qwen-7B-Chat", trust_remote_code=True).cuda()
 model = model.to(device)
-model.generation_config = GenerationConfig.from_pretrained("Qwen-7B")
+model.generation_config = GenerationConfig.from_pretrained("Qwen-7B-Chat")
 
 def predict_model(data):
     text = data["message"][0]["content"]
