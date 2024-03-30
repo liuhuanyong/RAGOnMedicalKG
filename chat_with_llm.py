@@ -9,7 +9,7 @@ import re
 entity_parser = QuestionClassifier()
 
 kg = MedicalGraph()
-model = ModelAPI(MODEL_URL="http://10/generate")
+model = ModelAPI(MODEL_URL="http://你的IP:3001/generate")
 
 class KGRAG():
     def __init__(self):
