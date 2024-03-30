@@ -15,7 +15,7 @@ self-implement of disease centered Medical graph from zero to full and sever as 
 1、配置要求：要求配置neo4j数据库及相应的python依赖包。neo4j数据库用户名密码记住，并修改相应文件。    
 2、知识图谱数据导入：python build_medicalgraph.py，导入的数据较多，估计需要几个小时。     
 3、该项目依赖qwen-7b-chat作为底层llm模型，可以执行python qianwen7b_server.py搭建服务   
-4、配置服务地址： model = ModelAPI(MODEL_URL="http://10/generate")     
+4、配置服务地址： model = ModelAPI(MODEL_URL="http://你的IP/generate")     
 5、开始执行问答：python chat_with_llm.py，
   
 # 三、医疗知识图谱构建
