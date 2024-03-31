@@ -30,6 +30,7 @@ class ModelAPI():
         message = [{"role": "user", "content": query}]
         count = 0
         response = ''
+        history = []
         while count <=10:
             try:
                 count +=1
